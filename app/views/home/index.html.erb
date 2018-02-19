@@ -1,7 +1,20 @@
 
+<div class="container">
 <% if user_signed_in? %>
-<p>Merci de t'être inscrit·e, <%= current_user.email %></p>
-<%= link_to 'log out', destroy_user_session_path, method: :delete %>
+
+<h1> Merci de t'être inscrit·e, <%= current_user.email %> </h1>
+
+<p> <%= link_to "Sign out", destroy_user_session_path, method: :delete  %> </p>
+
 <% else %>
-<%= link_to 'sign up', new_user_registration_path %>
-<% end%>
+
+<h1> Bienvenu à toi :) </h1>
+<h2> Rejoins-nous on est sympas </h2>
+
+
+<p> <%= link_to "Log in", new_user_session_path, class: "button" %> </p>
+<p> <%= link_to "Sign up!", new_user_registration_path, class: "button2" %> </p>
+
+
+<% end %>
+</div>

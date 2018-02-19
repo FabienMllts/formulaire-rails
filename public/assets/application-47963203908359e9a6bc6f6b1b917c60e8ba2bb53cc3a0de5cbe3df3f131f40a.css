@@ -1,0 +1,234 @@
+/* line 2, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+html {
+  height: 100%;
+}
+
+/* line 6, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+* {
+  padding: 0px;
+}
+
+/* line 10, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+body {
+  height: 100%;
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 0px;
+  background-image: url("https://i.ytimg.com/vi/L-hBQFIkHR8/maxresdefault.jpg");
+  background-size: cover;
+}
+
+/* line 20, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+h1 {
+  color: #000;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/* line 26, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.container {
+  text-align: center;
+}
+
+/* line 29, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.field_with_errors + br {
+  display: none;
+}
+
+/* line 36, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#error_explanation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 150px;
+  background-color: red;
+  opacity: 0.9;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* line 50, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#register {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://i.ytimg.com/vi/L-hBQFIkHR8/maxresdefault.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 63, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.corpus {
+  display: flex;
+  height: 395px;
+  width: 700px;
+}
+
+/* line 72, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.left {
+  background-color: #008080;
+  width: 250px;
+  height: 395px;
+  opacity: 0.96;
+}
+
+/* line 79, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.left p {
+  margin-left: 50px;
+}
+
+/* line 84, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.left h2 {
+  color: #FFF;
+  margin-left: 15px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* line 93, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.right {
+  display: flex;
+  background-color: #FFF;
+  width: 450px;
+  height: 395px;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.92;
+}
+
+/* line 108, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 115, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#fields, input {
+  height: 3em;
+  width: 25em;
+}
+
+/* line 120, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_email {
+  background-image: url("/assets/user-c194952ec277c21e167cea6f2b9f78893f5d5d7917be7647fcf975bfae5d3d4b.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+  padding-left: 35px;
+}
+
+/* line 134, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_email:hover {
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+/* line 141, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_password {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  padding-left: 35px;
+  background-image: url("/assets/lock-dd75e8c05814df97e9c814524a00a6798f4f0981e11d35d641bfc5cb4563e0b8.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* line 151, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_password:hover {
+  border-color: #000;
+}
+
+/* line 155, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_password_confirmation {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1px;
+  border-radius: 0px 0px 5px 5px;
+  border-top: none;
+  padding-left: 35px;
+  background-image: url("/assets/lock-dd75e8c05814df97e9c814524a00a6798f4f0981e11d35d641bfc5cb4563e0b8.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* line 167, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#user_password_confirmation:hover {
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+}
+
+/* line 174, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#button {
+  border-style: none;
+  border-radius: 5px;
+  background-color: #008080;
+  color: #FFF;
+  opacity: 0.95;
+  font-size: 15px;
+}
+
+/* line 183, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+#button:hover {
+  border-radius: 5px;
+  background-color: #2F4F4F;
+  color: #FFF;
+}
+
+/* line 190, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.signin {
+  display: flex;
+  background-color: #2F4F4F;
+  height: 50px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  opacity: 0.95;
+  font-size: 1.1em;
+}
+
+/* line 204, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.signin a {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* line 210, /home/fabien/Documents/documentsthp/week7/Day1/formulaire-stylay/app/assets/stylesheets/custom.scss */
+.signin a:hover {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
