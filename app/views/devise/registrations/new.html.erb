@@ -1,0 +1,51 @@
+<div id="register">
+  <div class="corpus">
+
+    <div class="left">
+      <p><img src="http://www.salondutravail.fr/wp-content/uploads/2018/01/the-hacking-project.png", width="150px", height="150px"/></p>
+      <h2>Rejoins nous on est sympas</h2>
+    </div>
+
+    <div class="right">
+
+
+      <h1>Bienvenue chez nous</h1>
+
+      <div id="fields">
+
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Enter your email" %>
+        
+
+
+        <% if @minimum_password_length %>
+
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off", placeholder: "#{@minimum_password_length} characters minimum" %>
+
+
+        <br>
+        <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password confirmation" %>
+
+      </div>
+
+
+      <div >
+        <%= f.submit "Sign up", id:"button" %>
+      </div>
+
+      <% end %>
+      
+       <button class="signin"><%= render "devise/shared/links" %></button>
+     
+
+    </div>
+
+
+  </div>
+</div>
+
+
