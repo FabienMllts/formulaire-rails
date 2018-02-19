@@ -6,8 +6,8 @@ html, body{
 }
 
 h1{
-color: #000;
-font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: #000;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .field_with_errors + br{
@@ -102,11 +102,16 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #user_email{
+
+	background-image: url(asset-path('user.png'));
+	background-repeat: no-repeat;
+	background-position: left center;
 	border-style: solid;
 	border-color: lightgrey;
 	border-width: 1px;
 	border-radius: 5px 5px 0px 0px;
 	border-bottom: none;
+	padding-left: 35px;
 
 }
 
@@ -121,6 +126,10 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border-style: solid;
 	border-color: lightgrey;
 	border-width: 1px;
+	padding-left: 35px;
+	background-image: url(asset-path('lock.png'));
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
 #user_password:hover{
@@ -133,6 +142,10 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border-width: 1px;
 	border-radius: 0px 0px 5px 5px;
 	border-top: none;
+	padding-left: 35px;
+	background-image: url(asset-path('lock.png'));
+	background-repeat: no-repeat;
+	background-position: left center;
 }
 
 #user_password_confirmation:hover{
@@ -167,17 +180,17 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 	border: none;
 	opacity: 0.95;
 }
-	
+
 
 
 .signin a{
-color:#FFF;
-text-decoration:none;
-font-size: 1.1em;
+	color:#FFF;
+	text-decoration:none;
+	font-size: 1.1em;
 }
 
 .signin a:hover{
-color:#000;
-text-decoration:none;
-font-size: 1.1em;
+	color:#000;
+	text-decoration:none;
+	font-size: 1.1em;
 }
